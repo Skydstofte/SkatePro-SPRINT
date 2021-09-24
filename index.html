@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">
+    <link href = "https://fonts.googleapis.com/icon?family=Open+Sans:400,600" rel = "stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Forside</title>
+</head>
+<body>
+
+<header>
+  <!-- Denne første del af vores HTML-kode viser vi den øverste bar af hjemmesiden. 
+    Den indeholder et logo, en search-bar og tre ikoner med tilhørende tekst  -->
+     
+    <div class="topnav">
+        <div class="image-container">
+            <img src="Images/logo.png" alt="Logo" class="logo">
+        </div>
+        <!-- Kode for loget -->
+
+        <div class="search-container">
+            <input class="search-input" type="text" placeholder="Søg blandt 20.000+ produkter..." name="search">
+            <button class="search-button"><i class="material-icons">search</i></button>
+        </div>
+        <!-- Kode for search-baren -->
+
+        <div class="action-row">
+            <div class="action-main"> 
+                <a href="#">
+                    <div class="action-main">
+                        <i class="material-icons">person_outline</i>
+                    </div>
+                    <div class="action-description">Konto</div>
+                </a>
+            </div>
+    
+            <div class="action-main">
+                <a href="#">
+                    <div class="action-main">
+                        <i class="material-icons">favorite_border</i>
+                    </div>
+                    <div class="action-description">Gemt</div>
+                </a>
+            </div>
+  
+            <div class="action-main">
+                <a href="#">
+                    <div class="action-main">
+                        <i class="material-icons">shopping_cart</i>
+                    </div>
+                    <div class="action-description">Kurv</div>
+                </a>
+            </div>
+        </div>
+        <!-- Kode for de tre ikoner med tilhørende tekst -->
+    </div>
+</header>
+
+<!-- ############################################################################# -->
+<!-- Denne del af vores kode indeholder menu-baren. 
+    Den er til dels brugbar og vores egentlige formål med SPRINT-Projektet. 
+    Vi har valgt ikke at gå mere i dybden med denne del, 
+    fordi dette ikke er noget vi har fået undervisning i.  -->
+
+<section>
+    <nav>
+        <div>
+        <div class="navbar">
+            <i class='bx bx-menu'></i>
+            <div class="nav-links">
+                <ul class="links">
+                    <li><a href="#">Forside</a></li>
+                        <li>
+                            <a href="#">LØBEHJUL</a>
+                                <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+                                    <ul class="htmlCss-sub-menu sub-menu">
+                                        <li><a href="#">SWAG</a></li>
+                                        <li><a href="#">Trick</a></li>
+                                        <li><a href="#">Børn</a></li>
+                                        <li><a href="#">Hjul</a></li>
+                                        <li><a href="#">Beskyttelse</a></li>
+                                        <li><a href="#">Ramper</a></li>
+                            <li class="more">
+                                <span><a href="#">DELE</a>
+                                    <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                                </span>
+                                <ul class="more-sub-menu sub-menu">
+                                    <li><a href="#">Håndtag</a></li>
+                                    <li><a href="#">Decks</a></li>
+                                    <li><a href="#">Merch</a></li>
+                                </ul>
+                            </li>
+                            </ul>
+                        </li>
+                    <li>
+
+                    <!-- Beklædnings-kategorien er vores hovedstar.
+                    Vi linker videre fra "Pakke Tilbud" til en side som har en specifik funktion, 
+                    som vi har valgt også at lave -->
+                            <a href="#">Beklædning</a>
+                                <i class='bx bxs-chevron-down js-arrow arrow '></i>
+                                    <ul class="js-sub-menu sub-menu">
+                                        <li><a href="builder.html">Pakke tilbud</a></li>
+                                        <li><a href="#">T-shirt</a></li>
+                                        <li><a href="#">Hoddies</a></li>
+                                        <li><a href="#">Skjorter</a></li>
+                                        <li><a href="#">Pants</a></li>
+                                    </ul>
+                    </li>
+                    <li><a href="#">Boards</a></li>
+                    <li><a href="#">Surf</a></li>
+                </ul>
+            </div>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+<!-- ################################################################################# -->
+<!-- Denne sidste del af koden arbejder med alt under top- og menu-baren.
+Den indeholder en liste, ikon med tilhørende tekst, samt 12 beklædningsgenstande med tilhørende beskrivelse og pris.
+Vi har valgt at lave denne den som en tro kopi af hjemmesiden, for at vise at vi kan bruge de ting vi har haft i undervisningen. -->
+
+    <div class="container">
+        <div class="list-container">
+            <ul>
+                <li class="list-header">Beklædning</li>
+                <li>Trøjer</li>
+                <li>Jakker</li>
+                <li>Bukser</li>
+                <li>Caps</li>
+                <li>Huer</li>
+                <li>Strømper</li>
+                <li>Sko</li>
+                <li>Solbriller</li>
+                <li>Tasker</li>
+                <li>Tilbud</li>
+            </ul>
+        </div>  
+        <!-- Dette er listen som sidder i venstre side. -->
+
+        <div class="right-container">
+
+            <div class="heart-container">
+                <i class="material-icons" id="heart">favorite</i>
+                <p>Populært lige nu</p>
+            </div>
+            <!-- Dette er hjerte-ikonet med den tilhørende tekst. -->
+
+            <!-- Herunder kommer de 12 "kort" med bekldning, beskrivelse og pris. -->
+            <div class="row">
+
+                <!-- Clothing 1 -->
+                <div class="item">
+                    <div class="item-main">
+                        <a href="https://www.skatepro.dk/590-36119.htm">
+                        <div class="image"><img src="https://cdn.skatepro.com/product/440/skatepro-tech-pants-wf.jpg" 
+                        alt="SkatePro TEch Pants"></div>            
+                        <div class="main-description">SkatePro TEch Pants<br>299 kr</div>
+                        </a>
+
+                    </div>
+                </div>    
+
+                <!-- Clothing 2 -->
+                <div class="item">
+                    <div class="item-main">
+                        <a href="https://www.skatepro.dk/539-19606.htm">
+                        <div class="image"><img src="https://cdn.skatepro.com/product/440/vans-old-skool-pro-skate-shoes-i9.jpg"
+                        alt="Vans Old Skool Pro Sko"></div>
+                        <div class="main-description">Vans Old Skool Pro Sko<br>449 kr</div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Clothing 3 -->
+                <div class="item">
+                    <div class="item-main">
+                        <a href="https://www.skatepro.dk/403-44419.htm">
+                        <div class="image"><img src="https://cdn.skatepro.com/product/440/doomed-everything-t-shirt-fi.jpg"
+                        alt="Doomed Everything T-shirt"></div>
+                        <div class="main-description">Doomed Everything T-shirt<br>279 kr</div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Clothing 4 -->
+                <div class="item">
+                    <div class="item-main">
+                        <a href="https://www.skatepro.dk/102-35935.htm">
+                        <div class="image"><img src="https://cdn.skatepro.com/product/440/straye-venice-suede-hi-top-skate-shoes-pc.jpg"
+                        alt="Straye Venice Suede Hi-Top Skate Sko"></div>
+                        <div class="main-description">Straye Venice Suede Hi-Top Skate Sko<br>649 kr</div>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Clothing 5 -->
+                <div class="item">
+                    <div class="item-main">
+                        <a href="https://www.skatepro.dk/101-43900.htm">
+                        <div class="image"><img src="https://cdn.skatepro.com/product/440/picture-faro-5-panel-cap-32.jpg"
+                        alt="Picture Faro 5 Panel Cap"></div>
+                        <div class="main-description">Picture Faro 5 Panel Cap<br>349 kr</div>
+                        </a>
+                    </div>
+                </div>    
+
+                <!-- Clothing 6 -->
+                <div class="item">
+                    <div class="item-main">
+                        <a href="https://www.skatepro.dk/565-37510.htm">
+                        <div class="image"><img src="https://cdn.skatepro.com/product/440/cold-seamless-womens-3-4-ski-underwear-set-yu.jpg"
+                        alt="Cold Seamless Dame 3/4 Skiundertøj Set"></div>
+                        <div class="main-description">Cold Seamless Dame 3/4 Skiundertøj Set<br>299 kr</div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Clothing 7 -->
+                <div class="item">
+                    <div class="item-main">
+                        <a href="https://www.skatepro.dk/132-37552.htm">
+                        <div class="image"><img src="https://cdn.skatepro.com/product/440/ccm-compression-senior-shorts-1q.jpg" 
+                        alt="CCM Compression Senior Shorts"></div>
+                        <div class="main-description">CCM Compression Senior Shorts <br> 299 kr</div>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Clothing 8 -->
+                <div class="item">
+                    <div class="item-main">
+                        <a href="https://www.skatepro.dk/580-37451.htm">
+                        <div class="image"><img src="https://cdn.skatepro.com/product/440/planks-happy-days-pullover-jacket-4p.jpg"
+                        alt="Planks Happy Days Anorak"></div>
+                        <div class="main-description">Planks Happy Days Anorak<br>799 kr</div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Clothing 9 -->
+                <div class="item">
+                    <div class="item-main">
+                        <a href="https://www.skatepro.dk/588-42790.htm">
+                        <div class="image"><img src="https://cdn.skatepro.com/product/440/vans-seek-sunglasses-td.jpg"
+                        alt="Vans Seek Solbriller"></div>
+                        <div class="main-description">Vans Seek Solbriller<br>199 kr</div>
+                        </a>
+                    </div>
+                </div>    
+
+                <!-- Clothing 10 -->
+                <div class="item">
+                    <div class="item-main">
+                        <a href="https://www.skatepro.dk/405-44433.htm">
+                        <div class="image"><img src="https://cdn.skatepro.com/product/440/doomed-eye-beanie-j5.jpg"
+                        alt="Doomed Eye Hue"></div>
+                        <div class="main-description">Doomed Eye Hue<br>279 kr</div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Clothing 11 -->
+                <div class="item">
+                    <div class="item-main">
+                        <a href="https://www.skatepro.dk/65-25786.htm">
+                        <div class="image"><img src="https://cdn.skatepro.com/product/440/rio-roller-script-skate-bag-qg.jpg"
+                        alt="Rio Roller Script Skøjtetaske"></div>
+                        <div class="main-description">Rio Roller Script Skøjtetaske<br>169 kr</div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Clothing 12 -->
+                <div class="item">
+                    <div class="item-main">
+                        <a href="https://www.skatepro.dk/546-38184.htm">
+                        <div class="image"><img src="https://cdn.skatepro.com/product/440/rip-n-dip-lord-nermal-socks-pi.jpg"
+                        alt="Rip N Dip Lord Nermal Strømper"></div>
+                        <div class="main-description">Rip N Dip Lord Nermal Strømper<br>129 kr</div>
+                        </a>
+                    </div>
+                </div>
+                
+            </div> 
+        </div>
+    </div>
+
+</body>
+</html>
